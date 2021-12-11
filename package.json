@@ -4,6 +4,10 @@
   "description": "DeFi Token Staking App",
   "author": "gregory@dappuniversity.com",
   "dependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-es2015": "6.24.1",
@@ -20,6 +24,7 @@
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",
     "truffle": "5.1.39",
+    "typescript": "^4.5.3",
     "web3": "1.2.11"
   },
   "scripts": {
