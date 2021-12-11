@@ -28,6 +28,6 @@ module.exports = (artifacts: Truffle.Artifacts, web3: Web3) => {
     await dappToken.transfer(tokenFarm.address, '1000000000000000000000000');
 
     // 5. Transfer 100 DAI tokens to investor account (2nd account in the list)
-    await daiToken.transfer(accounts[1], '100000000000000000000')
+    await daiToken.transfer(accounts[1], '100000000000000000000');
   };
 }
