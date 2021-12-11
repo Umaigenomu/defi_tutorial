@@ -5,7 +5,6 @@
   "author": "gregory@dappuniversity.com",
   "dependencies": {
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.12",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "babel-polyfill": "6.26.0",
@@ -28,6 +27,8 @@
     "web3": "1.2.11"
   },
   "scripts": {
+    "generate-types": "npx typechain --target=truffle-v5 'src/abis/*.json'",
+    "postinstall": "truffle compile && npm run generate-types",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +42,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@typechain/truffle-v5": "^6.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.12",
+    "ts-node": "^10.4.0",
+    "typechain": "^6.0.5"
+  }
 }
