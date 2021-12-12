@@ -5,5 +5,6 @@ module.exports = async (callback) => {
   await tokenFarm.issueTokens();
 
   console.log("Tokens issued.")
+  console.log(`Stakers: ${await tokenFarm.stakers(0)}`);
   callback();
 };

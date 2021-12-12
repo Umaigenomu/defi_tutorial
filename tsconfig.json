@@ -19,13 +19,19 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react",
-    "types": ["@types/node", "@types/chai", "@types/mocha"],
+    "types": [
+      "@types/node",
+      "@types/chai",
+      "@types/mocha"
+    ],
     "typeRoots": [
       "./node_modules/@types",
       "./types"
     ]
   },
   "include": [
-    "src", "migrations", "types"
+    "src",
+    "migrations",
+    "types"
   ]
 }
