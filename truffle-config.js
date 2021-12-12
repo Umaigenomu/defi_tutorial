@@ -1,5 +1,4 @@
-// require('babel-register');
-// require('babel-polyfill');
+// Tutorial: https://www.youtube.com/watch?v=CgXQC4dbGUE
 require("ts-node").register({
   files: true,
 });

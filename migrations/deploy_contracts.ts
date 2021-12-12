@@ -21,7 +21,7 @@ module.exports = (artifacts: Truffle.Artifacts, web3: Web3) => {
     const dappToken = await DappToken.deployed();
 
     // 3. Deploy TokenFarm
-    await deployer.deploy(TokenFarm, dappToken.address, daiToken.address);
+    await deployer.deploy(TokenFarm, dappToken.address, daiToken.address);  // constructor args
     const tokenFarm = await TokenFarm.deployed();
 
     // 4. Transfer all Dapp tokens to TokenFarm (1 million)
